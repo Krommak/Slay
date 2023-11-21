@@ -1,8 +1,8 @@
-using Game.Stats.Unit;
+using Game.Units;
 using System;
 using UnityEngine;
 
-namespace Game.Settings
+namespace Game.Inject
 {
     [Serializable]
     public class PlayerSettings

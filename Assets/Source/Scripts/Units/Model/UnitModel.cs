@@ -1,7 +1,6 @@
-using Game.Stats.Unit;
 using UnityEngine;
 
-namespace Game.Models
+namespace Game.Units
 {
     public class UnitModel
     {

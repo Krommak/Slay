@@ -1,8 +1,6 @@
-using Game.Models;
-using Game.Stats.Unit;
 using UnityEngine;
 
-namespace Game.Builders
+namespace Game.Units
 {
     public class UnitBuilder
     {
@@ -25,7 +23,7 @@ namespace Game.Builders
         }
 
         public UnitBuilder WithName(string name)
-        { 
+        {
             _name = name;
 
             return this;
@@ -38,11 +36,12 @@ namespace Game.Builders
             return this;
         }
 
-        public UnitModel Build()
+        public T BuildAs<T>() where T : UnitModel
         {
             var unitGO = Object.Instantiate(_unitPrefab);
+
             var model = new UnitModel(_name, unitGO, _stats);
-            return model;
+            return model as T;
         }
 
         private void Reset()

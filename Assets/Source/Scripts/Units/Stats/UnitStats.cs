@@ -1,4 +1,4 @@
-namespace Game.Stats.Unit
+namespace Game.Units
 {
     public class UnitStats
     {

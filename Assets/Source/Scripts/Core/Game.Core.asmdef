@@ -1,8 +1,8 @@
 {
-    "name": "Settings",
-    "rootNamespace": "",
+    "name": "Game.Core",
+    "rootNamespace": "Game.Core",
     "references": [
-        "GUID:2c59b96a24592724a9a97e40933080c6"
+        "GUID:b65002f3cdefdb64496a2be8d5613710"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
